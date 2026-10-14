@@ -1,0 +1,30 @@
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/
+.venv/
+venv/
+build/
+dist/
+*.egg-info/
+# Large scientific evidence MUST remain in Drive, not GitHub.
+acld_full_experiment_outputs_*/
+acld_p0_5_logs/
+acld_p0_6_logs_*/
+p0_4_run_logs/
+# Drive-only materials and historical copies
+00_PROJECT_GOVERNANCE/
+10_MANUSCRIPT/
+20_REVIEW_NOTEBOOKS/
+90_LEGACY_PACKAGES/
+UavSwarmCriticalLinkDetection/
+generated_tables/
+*.aux
+*.fls
+*.fdb_latexmk
+*.xdv
+*.synctex.gz
+*.blg
+*.log
+.DS_Store
+Thumbs.db

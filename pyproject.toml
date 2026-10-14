@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fanet-acld-experiments"
+version = "0.6.0"
+description = "Reproducible FANET Adaptive Critical Link Detection experiment runners"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24", "scipy>=1.10", "pandas>=2.0", "networkx>=3.0", "matplotlib>=3.7"]
+
+[tool.setuptools]
+py-modules = [
+ "acld_p0_5_common", "acld_p0_6_common", "acld_p0_6_io", "acld_migrate_2_to_6",
+ "run_acld_p0_5_worker", "run_acld_p0_6_unit_worker", "run_acld_p0_6_parallel_queue",
+ "merge_acld_p0_5", "merge_acld_p0_6_campaign", "validate_acld_p0_4_outputs",
+ "postprocess_acld_p0_6_FINAL", "finalize_ACLD_P0_6_AFTER_A1", "pause_resume_acld_p0_6"
+]

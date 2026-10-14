@@ -1,0 +1,24 @@
+name: Source integrity
+on:
+  push:
+    branches: [main]
+  pull_request:
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Python syntax
+        run: python -m compileall -q -f .
+      - name: Protocol tests
+        run: python -m unittest discover -s tests -v
+      - name: No experimental data in Git
+        shell: bash
+        run: |
+          if git ls-files | grep -E '(^acld_full_experiment_outputs_|^acld_p0_.*logs|/detection_.*\.csv$|/mitigation_.*\.csv$)'; then
+            echo 'Experiment data should remain in Drive' >&2
+            exit 1
+          fi
