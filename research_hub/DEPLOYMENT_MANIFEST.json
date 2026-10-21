@@ -1,0 +1,28 @@
+{
+  "applied_date": "2026-10-21",
+  "snapshot_date": "2026-10-18",
+  "publication_gate": "NOT_READY",
+  "working_project_drive_url": "https://drive.google.com/drive/folders/11BHmFCX2iTgPhU4M2F0v5yDGsEHKMz1p",
+  "unified_drive_url": "https://drive.google.com/drive/folders/1lj_EmE6O2wTQU1oO0osqeyZRiiwsF7wd",
+  "github_repository": "https://github.com/ErcanErkalkan/UavSwarmCriticalLinkDetection",
+  "github_hub_path": "research_hub/",
+  "folders": {
+    "00_GOVERNANCE": "https://drive.google.com/drive/folders/1155clTncYrZKkUhpZLfq0bQsbg2XknMV",
+    "01_ACTIVE_SOURCE": "https://drive.google.com/drive/folders/1f0YSA4OnjhJsUSMJx-h8cOBb9-z51Wnq",
+    "02_CANONICAL_SNAPSHOT_20261018": "https://drive.google.com/drive/folders/1equBSQcn6vRgmNe3BGDlKlMawTQkMfG6",
+    "03_INDEPENDENT_AUDIT": "https://drive.google.com/drive/folders/1EU39885NdVGWkICNXvvltuwZ414B45ZG",
+    "04_DESCRIPTIVE_ANALYSIS": "https://drive.google.com/drive/folders/14G55FFAvd5kP1er26E0gwwSLTiZ6v0g9",
+    "05_MANUSCRIPT_WORKING": "https://drive.google.com/drive/folders/1quHOw_xXA2gAeNO3dscG3Q00fmiV-SHQ",
+    "06_REPRODUCTION_RUNBOOK": "https://drive.google.com/drive/folders/1ZVnibMypQnbfx6nfjkDXUEtI0lpLHDYg",
+    "07_LARGE_DATA_REFERENCES": "https://drive.google.com/drive/folders/1qVOZJ8fBSZDavkBpZSlBe_Ck6mK8VleV",
+    "08_DELIVERABLES": "https://drive.google.com/drive/folders/1-HnqRZiuaGg3c_LJ0znut0tDpwLWZHkQ"
+  },
+  "source_locations": {
+    "active_source": "https://github.com/ErcanErkalkan/UavSwarmCriticalLinkDetection",
+    "manuscript": "https://drive.google.com/drive/folders/12sziXUGPRyT_1hShVJ9jj4l8MaR9kA_u",
+    "canonical_combined_20261018": "https://drive.google.com/drive/folders/1o5nDiRdh4MUAor63xwLNQaxhxKA9wvvg",
+    "live_A2": "https://drive.google.com/drive/folders/1YDkJeo3A8uP6F1tW6PqBEB4kpRoJyD18",
+    "live_C1": "https://drive.google.com/drive/folders/1AJjWJUDrGaZFrViUQOd63XvTT4FRkrMa"
+  },
+  "policy": "GitHub=code and lightweight docs; Drive=large raw experiment evidence, manuscript and outputs. Existing active paths unchanged."
+}
