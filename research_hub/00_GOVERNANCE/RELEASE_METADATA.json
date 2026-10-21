@@ -1,0 +1,13 @@
+{
+  "project": "ACLD FANET unified research package",
+  "as_of": "2026-10-20",
+  "snapshot_evidence_date": "2026-10-18",
+  "source_repository": "https://github.com/ErcanErkalkan/UavSwarmCriticalLinkDetection",
+  "source_drive_folder": "https://drive.google.com/drive/folders/11BHmFCX2iTgPhU4M2F0v5yDGsEHKMz1p",
+  "scientific_gate": "NOT_READY",
+  "snapshot_records": 8070,
+  "snapshot_seed_units_completed": 1690,
+  "planned_seed_units": 1820,
+  "missing_A2_seed_units": 130,
+  "comments": "Unmodified experiment snapshot; large step-level files referenced but not included; sources may have changed since retrieval."
+}
