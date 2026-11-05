@@ -1,4 +1,4 @@
-# ACLD — paper-matched research version v1.0.0-paper
+# ACLD — paper-matched research version v1.0.0
 
 **Canonical paper-version directory:** [research_artifacts/v1.0.0](research_artifacts/v1.0.0/README.md) · [Version and SHA-256 lock](research_artifacts/v1.0.0/RELEASE_MANIFEST.json) · [Citation metadata](CITATION.cff)
 
@@ -9,7 +9,7 @@ python research_artifacts/v1.0.0/reconstruct.py --out dist
 python research_artifacts/v1.0.0/build_single_release.py --out dist
 ```
 
-**Release/DOI status:** Version prepared; a GitHub Release and Zenodo DOI cannot be claimed until actually published. Before publishing the tag `v1.0.0-paper`, connect this **public repository to Zenodo** so the archived GitHub source includes the full data and manuscript chunks. GitHub Actions artifacts expire and are not a DOI substitute.
+**Published research archive:** GitHub [Release `v1.0.0`](https://github.com/ErcanErkalkan/UavSwarmCriticalLinkDetection/releases/tag/v1.0.0), Zenodo DOI [10.5281/zenodo.23983336](https://doi.org/10.5281/zenodo.23983336). This release contains the paper-aligned software and reconstructible S2 data; **not** the full raw seven-campaign evidence. The DOI-linked manuscript is a post-release metadata-only update, while the `v1.0.0` tag remains immutable. See [DOI linkage and scope](research_artifacts/DOI_LINKAGE_20261105.md).
 
 **Scope warning:** Full seven-campaign original step-level data and certain historical executed-source fingerprints are not included. The S2 onset comparison is retrospective, and the October P0.5/P0.6 runner code is not independently proven to regenerate every S2 record. Overall scientific gate remains `NOT_ALL_PASS`. The older October operating instructions below are historical.
 

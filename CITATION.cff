@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-message: "If citing the research software, use the version-specific Zenodo DOI after its creation. The manuscript and recorded S2 data have distinct scientific scopes."
+message: "Cite the v1.0.0 research software and included synthetic S2 dataset using the version-specific Zenodo DOI. The complete seven-campaign historical raw archive is not included."
 title: "ACLD: Risk-Gated Partition Early Warning from Forecast Bridges in UAV Swarm Networks — Paper-Matched Research Artifacts"
 type: software
 authors:
@@ -8,6 +8,9 @@ authors:
     affiliation: Marmara University
     email: ercan.erkalkan@marmara.edu.tr
 version: 1.0.0
+date-released: 2026-11-05
+doi: 10.5281/zenodo.23983336
+url: https://github.com/ErcanErkalkan/UavSwarmCriticalLinkDetection/releases/tag/v1.0.0
 repository-code: https://github.com/ErcanErkalkan/UavSwarmCriticalLinkDetection
 keywords:
   - FANET
