@@ -1,6 +1,8 @@
+> **Historical run-order only (18–21 October 2026).** Later recorded evidence completed A2 and C2. Do not restart any “missing A2 130 units” without reviewing the present Drive state and current source hashes. See [current evidence ledger](CURRENT_EVIDENCE_20261105.md). The former `README_TR.md` target was not present in the audited GitHub tree and is replaced by root `README.md`.
+
 # Controlled execution sequence
 
-1. Read `README_TR.md` and `PUBLICATION_GATE.md` before using any PowerShell launcher.
+1. Read root `README.md` and `PUBLICATION_GATE.md` before using any PowerShell launcher.
 2. Let Google Drive for Desktop completely sync the original E: working directory. Verify no old queue or running C2 process before any operations.
 3. On a **copy** of this snapshot, run `python 03_INDEPENDENT_AUDIT/verify_release.py`. A PASS only certifies episode-archive structure.
 4. Run `python -m unittest discover -s tests -v` **from `01_ACTIVE_SOURCE`**; do not run from an arbitrary parent directory.
