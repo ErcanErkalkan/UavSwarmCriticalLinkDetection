@@ -1,3 +1,20 @@
+# ACLD — paper-matched research version v1.0.0-paper
+
+**Canonical paper-version directory:** [research_artifacts/v1.0.0](research_artifacts/v1.0.0/README.md) · [Version and SHA-256 lock](research_artifacts/v1.0.0/RELEASE_MANIFEST.json) · [Citation metadata](CITATION.cff)
+
+The 5 November 2026 manuscript PDF, full LaTeX/figures/bibliography source, and curated 40-unit original synthetic S2 data are preserved in **one reconstructible version**. Two binary ZIP archives are stored as SHA-pinned parts for exact source and data archiving. GitHub Actions verifies every part and produces one downloadable release ZIP.
+
+```bash
+python research_artifacts/v1.0.0/reconstruct.py --out dist
+python research_artifacts/v1.0.0/build_single_release.py --out dist
+```
+
+**Release/DOI status:** Version prepared; a GitHub Release and Zenodo DOI cannot be claimed until actually published. Before publishing the tag `v1.0.0-paper`, connect this **public repository to Zenodo** so the archived GitHub source includes the full data and manuscript chunks. GitHub Actions artifacts expire and are not a DOI substitute.
+
+**Scope warning:** Full seven-campaign original step-level data and certain historical executed-source fingerprints are not included. The S2 onset comparison is retrospective, and the October P0.5/P0.6 runner code is not independently proven to regenerate every S2 record. Overall scientific gate remains `NOT_ALL_PASS`. The older October operating instructions below are historical.
+
+---
+
 > **Updated scientific status (5 November 2026):** The old A2 590/720, 8,070-row and C2-pending instructions below describe an **October archival snapshot**, not current state. Seven campaign review integrity checks have passed, the latest review ledger contains 8,720 rows and S2 has an independently SHA-checked 40-unit archive; the overall scientific gate is **NOT_ALL_PASS**. Read the [current evidence ledger](research_hub/00_GOVERNANCE/CURRENT_EVIDENCE_20261105.md). Do **not** rerun "missing 130 A2 units" based on the older operating instructions. Recent S5 controller source and latest unsubmitted manuscript are held in Drive/local packages, not mirrored in GitHub.
 
 # FANET Adaptive Critical Link Detection — single source project
