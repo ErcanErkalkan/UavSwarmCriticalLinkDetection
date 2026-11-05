@@ -1,8 +1,10 @@
+> **Updated scientific status (5 November 2026):** The old A2 590/720, 8,070-row and C2-pending instructions below describe an **October archival snapshot**, not current state. Seven campaign review integrity checks have passed, the latest review ledger contains 8,720 rows and S2 has an independently SHA-checked 40-unit archive; the overall scientific gate is **NOT_ALL_PASS**. Read the [current evidence ledger](research_hub/00_GOVERNANCE/CURRENT_EVIDENCE_20261105.md). Do **not** rerun "missing 130 A2 units" based on the older operating instructions. Recent S5 controller source and latest unsubmitted manuscript are held in Drive/local packages, not mirrored in GitHub.
+
 # FANET Adaptive Critical Link Detection — single source project
 
 [Source on GitHub](https://github.com/ErcanErkalkan/UavSwarmCriticalLinkDetection)
 
-The **GitHub `main` branch contains all active Python code** and the audited scientific notebook for the P0.5/P0.6 ACLD campaigns. The working folder under **Google Drive for Desktop** mirrors these source files and also stores **large experiment results, original worker shards, merge reports, logs, figures, manuscripts and historical records**. Those scientific outputs stay exclusively in Drive and are excluded from Git.
+The **GitHub `main` branch contains the October P0.5/P0.6 experiment-runner code** and the audited scientific notebook for the P0.5/P0.6 ACLD campaigns. The working folder under **Google Drive for Desktop** mirrors these source files and also stores **large experiment results, original worker shards, merge reports, logs, figures, manuscripts and historical records**. Those scientific outputs stay exclusively in Drive and are excluded from Git.
 
 **Windows project root:**
 
