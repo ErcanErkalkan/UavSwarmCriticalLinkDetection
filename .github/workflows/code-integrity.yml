@@ -3,6 +3,7 @@ on:
   push:
     branches: [main]
   pull_request:
+
 jobs:
   verify:
     runs-on: ubuntu-latest
@@ -13,28 +14,19 @@ jobs:
           python-version: '3.11'
       - name: Python syntax
         run: python -m compileall -q -f .
-      - name: Protocol tests
+      - name: Protocol and evidence metadata tests
         run: python -m unittest discover -s tests -v
-      - name: Current evidence ledger tests
-        run: python -m unittest tests.test_evidence_manifest -v
       - name: No unpublished bundles or local credentials
         shell: bash
         run: |
-          if git ls-files | grep -E '(^|/)(\.env(\..*)?|ACLD_Manuscript[^/]*\.pdf|ACLD_S2_40_OF_40_FINAL_[^/]*\.zip)
+          if git ls-files | grep -E '(^|/)(\.env(\..*)?|ACLD_Manuscript[^/]*\.pdf|ACLD_S2_40_OF_40_FINAL_[^/]*\.zip)$'; then
+            echo 'Unpublished manuscripts, raw S2 archives and credentials must remain outside public Git' >&2
+            exit 1
+          fi
+      - name: No raw experiment data in Git
         shell: bash
         run: |
           if git ls-files | grep -E '(^acld_full_experiment_outputs_|^acld_p0_.*logs|/detection_.*\.csv$|/mitigation_.*\.csv$)'; then
-            echo 'Experiment data should remain in Drive' >&2
-            exit 1
-          fi
-; then
-            echo 'Unpublished manuscripts, source archives or credentials must remain outside public Git' >&2
-            exit 1
-          fi
-      - name: No experimental data in Git
-        shell: bash
-        run: |
-          if git ls-files | grep -E '(^acld_full_experiment_outputs_|^acld_p0_.*logs|/detection_.*\.csv$|/mitigation_.*\.csv$)'; then
-            echo 'Experiment data should remain in Drive' >&2
+            echo 'Raw experimental data must remain in Drive' >&2
             exit 1
           fi
