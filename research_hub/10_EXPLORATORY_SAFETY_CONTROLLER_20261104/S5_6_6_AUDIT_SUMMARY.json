@@ -1,0 +1,12 @@
+{
+  "status": "PASS_S5_6_6_EXPLORATORY_INTEGRITY_ONLY",
+  "controlled_pairs": 672,
+  "paired_future_kinematic_steps": 26880,
+  "natural_positions": 594,
+  "natural_plan_checkpoints": 120,
+  "natural_selected_plans": 7,
+  "natural_vetoes": 0,
+  "holdout_410_419": "NOT_USED",
+  "source_sha256": "966abb1d64e5fc18e19ddf5e80ea237a7038956444eef2b4354e73938a39ac72",
+  "scope": "Exploratory integrity only; no physical safety or generalization claim."
+}
