@@ -28,3 +28,13 @@ generated_tables/
 *.log
 .DS_Store
 Thumbs.db
+
+# Scientific archive privacy: keep large/unsubmitted artifacts in author-controlled Drive.
+.env
+.env.*
+*.pkl
+*.parquet
+ACLD_Manuscript*.pdf
+ACLD_S2_40_OF_40_FINAL_*.zip
+ACLD_*Gonderim*.zip
+ACLD_*Kaynak*.zip
