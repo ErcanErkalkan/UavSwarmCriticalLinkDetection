@@ -1,9 +1,9 @@
-# Independent read-only checks
+# Independent audits — archival and current
 
-`verify_release.py` checks the archived episode snapshot file hashes, row counts, distinct episode identifiers and campaign totals. Run it from the full downloaded Drive release (with `02_CANONICAL_SNAPSHOT_20261018/` as its sibling).
+- `verify_release.py` verifies **18 October 2026** frozen 8,070-row episode snapshot, only when the external raw snapshot files are supplied. The script is deliberately not rewritten to assert 8,720 rows.
+- `../09_VALIDATED_EARLY_WARNING_20261105/verify_S2_onset_v2.py` verifies the **S2 40-unit ZIP**, each sidecar SHA256, paired step labels, onset confusion and whole-seed bootstrap. Original external ZIP required.
+- S5.6.6/S5.6.7 exploratory controller checks are described in `../10_EXPLORATORY_SAFETY_CONTROLLER_20261104/`, without a safety or hard-real-time certification.
 
-```bash
-python 03_INDEPENDENT_AUDIT/verify_release.py
-```
+The November seven-campaign recorded integrity gate is not interchangeable with historical executed-worker code fingerprint completeness. Recompute from original artifacts when needed. Integrity of a data archive does not validate all scientific claims.
 
-The script reports **INTEGRITY: PASS** when data match the archived 18 October manifest, but still reports **PUBLICATION GATE: NOT_READY**. It does not run experiments or verify physical UAV deployment.
+[Current evidence ledger](../00_GOVERNANCE/CURRENT_EVIDENCE_20261105.md).

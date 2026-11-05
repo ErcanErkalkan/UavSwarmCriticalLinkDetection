@@ -1,3 +1,5 @@
+> **Updated 5 November 2026:** This document's 8,070/1,690/590 A2 figures are explicitly **18 October historical snapshot values**. Current scientific records, S2 checks and S5 boundaries: [CURRENT_EVIDENCE_20261105.md](00_GOVERNANCE/CURRENT_EVIDENCE_20261105.md). The older worker-resumption instructions are not an authorization to restart completed campaigns.
+
 # FANET – Adaptive Critical Link Detection | Unified research hub
 
 **Applied:** 2026-10-21. **Evidence cut-off:** 2026-10-18 (archival snapshot). **Scientific gate:** NOT READY.

@@ -1,13 +1,62 @@
 {
-  "project": "ACLD FANET unified research package",
-  "as_of": "2026-10-20",
-  "snapshot_evidence_date": "2026-10-18",
+  "project": "ACLD FANET unified research project",
+  "as_of": "2026-11-05",
+  "current_scientific_gate": "NOT_ALL_PASS",
+  "recorded_campaign_data_integrity": "PASS_SEVEN_CAMPAIGNS",
+  "current_review_episode_method_controller_records": 8720,
+  "review_campaign_rows": {
+    "A1": 2700,
+    "A2": 3600,
+    "A3": 240,
+    "B1": 600,
+    "B2": 600,
+    "C1": 500,
+    "C3": 480
+  },
+  "archive_snapshot_20261018": {
+    "rows": 8070,
+    "seed_units_present": 1690,
+    "seed_units_planned": 1820,
+    "A2_units_completed": 590,
+    "A2_units_planned": 720,
+    "gate_at_snapshot": "NOT_READY"
+  },
+  "S2": {
+    "source_units": 40,
+    "verified_source_sidecar_sha256": 40,
+    "distinct_seeds": 10,
+    "scenario_strata": 4,
+    "transitions": 159960,
+    "posthoc_onsets": 46,
+    "ACLD_TP": 45,
+    "ACLD_FP": 117,
+    "Tarjan_TP": 46,
+    "Tarjan_FP": 712,
+    "archive_sha256": "3295d3fdafd539e90f9ce9f75355b3dbd6d0296a4c0a330bf2e1c27051cb4e05"
+  },
+  "C2_core_median_ms": {
+    "n50": 10.976,
+    "n150": 58.015,
+    "n300": 244.406,
+    "n500": 828.972,
+    "n1000": 3751.072
+  },
+  "S5_6_7": {
+    "research_state": "EXPLORATORY_ONLY",
+    "natural_gate_vetoes": 0,
+    "holdout_seeds_410_419": "NOT_USED"
+  },
+  "latest_author_manuscript": {
+    "date": "2026-11-05",
+    "pages": 49,
+    "pdf_sha256": "60a9b2c1de0a84afdf3c0993b111ce9ffc04928e6cfc757a51a82c181585db84",
+    "tex_sha256": "27071523b692c5f2cdd755b68072d991cf9006bb0555c4be426a1be504497936",
+    "bib_sha256": "e99d5d815a81c63ef04644ca2ea976b8daa7ca85ff7b06704a3425550dbf0168",
+    "journal_submission_confirmed": false,
+    "public_repo_holds_manuscript": false
+  },
+  "evidence_ledger": "research_hub/00_GOVERNANCE/CURRENT_EVIDENCE_20261105.md",
   "source_repository": "https://github.com/ErcanErkalkan/UavSwarmCriticalLinkDetection",
   "source_drive_folder": "https://drive.google.com/drive/folders/11BHmFCX2iTgPhU4M2F0v5yDGsEHKMz1p",
-  "scientific_gate": "NOT_READY",
-  "snapshot_records": 8070,
-  "snapshot_seed_units_completed": 1690,
-  "planned_seed_units": 1820,
-  "missing_A2_seed_units": 130,
-  "comments": "Unmodified experiment snapshot; large step-level files referenced but not included; sources may have changed since retrieval."
+  "note": "Original October RELEASE_METADATA.json was superseded for current status, not rewritten in the historical Drive snapshot. GitHub does not mirror all post-October S5 source/experimental data."
 }

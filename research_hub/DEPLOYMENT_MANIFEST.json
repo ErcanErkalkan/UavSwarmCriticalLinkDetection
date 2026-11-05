@@ -1,7 +1,7 @@
 {
   "applied_date": "2026-10-21",
   "snapshot_date": "2026-10-18",
-  "publication_gate": "NOT_READY",
+  "publication_gate": "NOT_ALL_PASS",
   "working_project_drive_url": "https://drive.google.com/drive/folders/11BHmFCX2iTgPhU4M2F0v5yDGsEHKMz1p",
   "unified_drive_url": "https://drive.google.com/drive/folders/1lj_EmE6O2wTQU1oO0osqeyZRiiwsF7wd",
   "github_repository": "https://github.com/ErcanErkalkan/UavSwarmCriticalLinkDetection",
@@ -24,5 +24,14 @@
     "live_A2": "https://drive.google.com/drive/folders/1YDkJeo3A8uP6F1tW6PqBEB4kpRoJyD18",
     "live_C1": "https://drive.google.com/drive/folders/1AJjWJUDrGaZFrViUQOd63XvTT4FRkrMa"
   },
-  "policy": "GitHub=code and lightweight docs; Drive=large raw experiment evidence, manuscript and outputs. Existing active paths unchanged."
+  "policy": "GitHub=code and lightweight docs; Drive=large raw experiment evidence, manuscript and outputs. Existing active paths unchanged.",
+  "archival_snapshot_date": "2026-10-18",
+  "archival_publication_gate": "NOT_READY",
+  "current_evidence_date": "2026-11-05",
+  "current_scientific_gate": "NOT_ALL_PASS",
+  "current_evidence_ledger": "research_hub/00_GOVERNANCE/CURRENT_EVIDENCE_20261105.md",
+  "current_s2_replay": "research_hub/09_VALIDATED_EARLY_WARNING_20261105/",
+  "current_s5_exploratory": "research_hub/10_EXPLORATORY_SAFETY_CONTROLLER_20261104/",
+  "latest_manuscript_source": "Author-controlled local submission ZIP; not mirrored on GitHub",
+  "status_note": "October 18 snapshot counts remain historical. Current review 8720 records; S2 40/40 verified; S5 exploratory only. Do not resume old worker tasks based on archive status."
 }
