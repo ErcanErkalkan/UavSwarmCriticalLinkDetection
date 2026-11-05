@@ -1,18 +1,24 @@
-# Publication Gate - 20 October 2026 (snapshot from 18 October)
+# Publication / scientific gate — 5 November 2026
 
-**Publication readiness: NOT READY**. Passing ZIP hashes is necessary but not enough.
+**Overall research gate: NOT_ALL_PASS.** Scientific integrity PASS, posterior analysis, calibration, external generalization and controller safety are different status levels.
 
-| Task | Status | Closure criterion |
-|---|---|---|
-| Episode integrity | PASS | Verified SHA256, 8070 unique episode-method rows, 1690 units |
-| A1 exact-bridge and reuse audit | PARTIAL | Confirm 70 reused P0.4 units/source revision, step-level consistency, then canonical gate |
-| A2 Rician | FAIL / INCOMPLETE | Recover remaining 130 scenario-seed units, rerun canonical merge to 720/720 |
-| A3 ablation | PARTIAL | Verified 60/60 episode-unit rows, step-level/compatibility/source audit |
-| B1 and B2 closed-loop | PASS canonical | Confirm frozen source revision and paired controller evaluation |
-| C1 scaling | PARTIAL | Rerun current six-shard merge report with PASS and independent step-level checks |
-| C2 wall-clock runtime | PENDING | Serialize, isolate from concurrent workers, keep exact full-pipeline measurement boundary |
-| C3 GCS sensitivity | PASS canonical | Interpret as network-node inclusion effect, not compute-node location |
-| D1-D4 and E | PENDING | Paired CIs; prevalence control; calibration; failure modes; generate tables/figures |
-| Revised paper | WORKING ONLY | Replace placeholders only after all cited data gates pass |
+| Evidence area | Current assessment |
+|---|---|
+| Seven recorded campaign review outputs | **Data-integrity PASS**: 8,720 method/controller episode rows |
+| A2 forecast-bridge edge localization | ACLD and guarded predictive Tarjan identical; edge micro-F1 ≈ 0.99605 |
+| A2 partition warning | Pooled FPR ACLD 2,304/59,607; Tarjan 12,180/59,607; positives/negative support must be disclosed |
+| S2 synthetic 40-unit study | 40/40 source-unit digests match; 10 distinct seeds; 159,960 dependent transitions |
+| S2 new-onset subgroup | Retrospective: 46 events, ACLD TP45 FP117 vs Tarjan TP46 FP712 |
+| Closed-loop controller | B1/B2 gains +0.187 / +0.046 percentage points; no broad connectivity benefit |
+| C2 timing | 5,000 core timing observations; n=150 median 58.015 ms; n=1000 median 3751.072 ms; not 50 ms real time |
+| Calibrated probability | Sparse-score reliability gaps remain; global Brier/ECE are insufficient |
+| S5.6.6/S5.6.7 controller | Exploratory data integrity, 0 natural risk-gate vetoes; no collision safety guarantee |
+| Historical source provenance | Some executed worker-notebook SHA fingerprints remain unavailable |
+| Permanent archive | No verified DOI for all seven campaigns |
+| Manuscript | 5 November 2026 author-controlled 49-page version, not verified submitted or accepted |
 
-**No claimed field UAV/HIL validation; no distributed implementation; no 10-ms guarantee at n=1000.**
+The historical **18 October** gate state (8,070 rows, 1,690/1,820 seed units, A2 590/720 and C2 pending) remains immutable in `02_CANONICAL_SNAPSHOT_20261018`, but it is **not current**.
+
+See [current ledger](CURRENT_EVIDENCE_20261105.md) and [S2 reproducibility](../09_VALIDATED_EARLY_WARNING_20261105/README.md).
+
+**Worker safety:** The old instructions to resume 130 missing A2 units must not be executed on current live results without fresh reconciliation of processes, manifests, hashes and source snapshot.
