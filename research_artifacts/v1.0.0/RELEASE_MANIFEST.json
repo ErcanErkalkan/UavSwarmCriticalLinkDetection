@@ -1,0 +1,39 @@
+{
+  "schema": "acld.paper-release.v1",
+  "version": "v1.0.0-paper",
+  "paper_title": "ACLD: Risk-Gated Partition Early Warning from Forecast Bridges in UAV Swarm Networks",
+  "author": "Ercan Erkalkan",
+  "as_of": "2026-11-05",
+  "paper_status": "author-prepared; journal submission is not confirmed",
+  "data_scope": "S2 synthetic 40 paired scenario-seed units only, not seven full historical campaigns",
+  "archives": {
+    "paper_source": {
+      "filename": "ACLD_Paper_Source_v1.0.0.zip",
+      "parts_directory": "paper_source_parts",
+      "parts_count": 5,
+      "size_bytes": 2874832,
+      "sha256": "d0c70ba52858f299c57b9292570030c42a92aa604945f11be82878b20285b84a"
+    },
+    "s2_dataset": {
+      "filename": "ACLD_S2_Zenodo_Dataset_v1.0.zip",
+      "parts_directory": "s2_dataset_parts",
+      "parts_count": 14,
+      "size_bytes": 8254431,
+      "sha256": "d155695152acefd4442880b4f11e66cb02d5731344cbd5794aabefb2435575ec"
+    }
+  },
+  "paper_internal_sha256": {
+    "ACLD_Manuscript.pdf": "60a9b2c1de0a84afdf3c0993b111ce9ffc04928e6cfc757a51a82c181585db84",
+    "ACLD_Manuscript.tex": "27071523b692c5f2cdd755b68072d991cf9006bb0555c4be426a1be504497936",
+    "adaptive-critical-link-detection.bib": "e99d5d815a81c63ef04644ca2ea976b8daa7ca85ff7b06704a3425550dbf0168"
+  },
+  "s2_source_zip_sha256": "3295d3fdafd539e90f9ce9f75355b3dbd6d0296a4c0a330bf2e1c27051cb4e05",
+  "research_gate": "NOT_ALL_PASS",
+  "s2_onset_posthoc": true,
+  "historical_worker_source_all_verified": false,
+  "full_7_campaign_data_included": false,
+  "funding": "none (author reported)",
+  "competing_interests": "none (author reported)",
+  "zenodo_doi": null,
+  "citation_rule": "Use exact DOI from Zenodo only after an actual GitHub release is archived; do not substitute an unverified DOI."
+}
