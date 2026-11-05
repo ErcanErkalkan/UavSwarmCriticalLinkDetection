@@ -1,0 +1,44 @@
+name: Paper-matched release integrity
+on:
+  push:
+    branches: [main]
+  pull_request:
+  release:
+    types: [published]
+  workflow_dispatch:
+jobs:
+  verify-and-package:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Reconstruct and verify exact frozen paper and S2 data
+        run: python research_artifacts/v1.0.0/reconstruct.py --out dist
+      - name: Build one version-locked release ZIP
+        run: python research_artifacts/v1.0.0/build_single_release.py --out dist
+      - name: Upload downloadable CI artifact (temporary; DOI comes from Release + Zenodo)
+        uses: actions/upload-artifact@v4
+        with:
+          name: ACLD-PaperMatched-v1.0.0-paper
+          path: dist/ACLD_PaperMatched_v1.0.0-paper.zip
+          if-no-files-found: error
+          retention-days: 90
+  attach-to-release:
+    if: github.event_name == 'release'
+    needs: verify-and-package
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: ACLD-PaperMatched-v1.0.0-paper
+          path: release-asset
+      - name: Attach the verified ZIP to the published GitHub release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release upload "${{ github.event.release.tag_name }}" release-asset/ACLD_PaperMatched_v1.0.0-paper.zip --clobber
