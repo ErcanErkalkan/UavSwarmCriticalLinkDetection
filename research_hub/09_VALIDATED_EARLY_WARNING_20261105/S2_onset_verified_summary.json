@@ -1,0 +1,72 @@
+{
+  "status": "PASS_RECORDED_S2_INTEGRITY_AND_RETROSPECTIVE_REANALYSIS",
+  "interpretation": "Post-hoc conditional sensitivity; not preregistered or field validated",
+  "verified_unit_sha256": 40,
+  "unique_seed_clusters": 10,
+  "fixed_scenario_strata": 4,
+  "source_archive_sha256": "3295d3fdafd539e90f9ce9f75355b3dbd6d0296a4c0a330bf2e1c27051cb4e05",
+  "counts_and_metrics": {
+    "acld_v3": {
+      "total": 159960,
+      "connected_current": 3096,
+      "already_disconnected_current": 156864,
+      "at_risk_onsets": 46,
+      "at_risk_negatives": 3050,
+      "TP": 45,
+      "FN": 1,
+      "FP": 117,
+      "TN": 2933,
+      "all_label_FP": 122,
+      "all_label_FN": 1,
+      "FPR_at_risk": 0.03836065573770492,
+      "recall_at_risk": 0.9782608695652174,
+      "precision_at_risk": 0.2777777777777778
+    },
+    "tarjan_predict_guard": {
+      "total": 159960,
+      "connected_current": 3096,
+      "already_disconnected_current": 156864,
+      "at_risk_onsets": 46,
+      "at_risk_negatives": 3050,
+      "TP": 46,
+      "FN": 0,
+      "FP": 712,
+      "TN": 2338,
+      "all_label_FP": 718,
+      "all_label_FN": 0,
+      "FPR_at_risk": 0.23344262295081966,
+      "recall_at_risk": 1,
+      "precision_at_risk": 0.06068601583113457
+    },
+    "components_only": {
+      "total": 159960,
+      "connected_current": 3096,
+      "already_disconnected_current": 156864,
+      "at_risk_onsets": 46,
+      "at_risk_negatives": 3050,
+      "TP": 40,
+      "FN": 6,
+      "FP": 4,
+      "TN": 3046,
+      "all_label_FP": 6,
+      "all_label_FN": 6,
+      "FPR_at_risk": 0.0013114754098360656,
+      "recall_at_risk": 0.8695652173913043,
+      "precision_at_risk": 0.9090909090909091
+    }
+  },
+  "bootstrap_5000_whole_seed_clusters": {
+    "FPR_ACLD": {
+      "lower_95": 0.02205815859721067,
+      "upper_95": 0.055948879443560355
+    },
+    "FPR_Tarjan": {
+      "lower_95": 0.19611026628814582,
+      "upper_95": 0.2699777141037886
+    },
+    "FPR_difference_ACLD_minus_Tarjan": {
+      "lower_95": -0.2385032130807091,
+      "upper_95": -0.15357263043471547
+    }
+  }
+}
