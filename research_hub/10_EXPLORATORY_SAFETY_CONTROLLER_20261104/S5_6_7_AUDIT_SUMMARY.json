@@ -1,0 +1,16 @@
+{
+  "status": "PASS_S5_6_7_EXPLORATORY_DATA_INTEGRITY_ONLY",
+  "states": 1188,
+  "probes": 334,
+  "paired_rolls": 39,
+  "unique_plan_episodes": 13,
+  "unique_next_step_connectivity_benefits": 2,
+  "natural_risk_and_approved_action_overlap": 0,
+  "natural_gate_vetoes": 0,
+  "holdout_410_419": "NOT_USED",
+  "source_hashes": {
+    "s5_6_5_engine_py": "9fbd624398c6ffc1cb23d36ea7e11a902ced00e037f5e9f13a40cecb27893011",
+    "multistep_risk_py": "6e3c2d5dfdc0bb58e7be3b77cf0366942485daedea7e121b90d5069eb04696d8"
+  },
+  "scope": "Only 12 dependent natural trajectories; zero natural overlap/veto; no collision avoidance guarantee."
+}
